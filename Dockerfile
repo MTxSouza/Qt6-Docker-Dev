@@ -20,7 +20,8 @@ RUN apt update -y && apt install -y wget \
                                     libxext6 \
                                     libxkbcommon-x11-0 \
                                     ffmpeg \
-                                    libsm6
+                                    libsm6 \
+                                    libegl1
 
 # defining workdir
 WORKDIR /home
