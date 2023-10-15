@@ -2,7 +2,11 @@
 Build a Docker Image with Qt6 installed for Desktop and Mobile development
 
 ---
-After built the Docker Image from this repo, run the container using the command below:
+After built the Docker Image from this repo, make sure to enable all permissions for Docker:
+```
+xhost +local:docker
+```
+Then, run the container using the command below:
 ```
 docker run -it -e DISPLAY=$DISPLAY -v /tmp/.X11-unix/:/tmp/.X11-unix/ --name qt6-build <image-id> bash
 ```
