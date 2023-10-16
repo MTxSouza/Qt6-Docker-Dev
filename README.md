@@ -1,6 +1,6 @@
 # Qt6-Docker-Dev
 ### Qt | *Software Development Framework*
-Build a Docker Image with all necessary libaries and packages to work with Qt framework.
+Build a Docker Image with all necessary libraries and packages to work with Qt framework.
 
 
 ---
