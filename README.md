@@ -4,11 +4,11 @@ Build a Docker Image with all necessary libraries and packages to work with Qt f
 
 
 ---
-After built the Docker Image from this repository, make sure to enable all permissions for Docker:
+After build the Docker Image from this repository, make sure to enable all permissions to Docker:
 ```
 xhost +local:docker
 ```
-Build the image from Dockerfile
+Build the image from Dockerfile.
 ```
 docker build -t qt6-builder .
 ```
@@ -18,7 +18,7 @@ docker run -it -e DISPLAY=$DISPLAY -v /tmp/.X11-unix/:/tmp/.X11-unix/ --name qt6
 ```
 This command will allows you to interact of your container inside of it, the reason why is because you will need to download the Qt6 installer and install all the binaries manually, it will allows you to install exactly what you need from Qt6 for your project too. You can download the installer [here](https://www.qt.io/download-qt-installer-oss?hsCtaTracking=99d9dd4f-5681-48d2-b096-470725510d34%7C074ddad0-fdef-4e53-8aa8-5e8a876d6ab4).
 
-*Copy the download link clicking with right button on **Download Button** and paste here*
+Copy the download link clicking with right button on **Download Button** and use the *wget* command to download.
 ```
 wget <qt-installer-download-url>
 ```
