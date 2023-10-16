@@ -2,7 +2,6 @@
 ### Qt | *Software Development Framework*
 Build a Docker Image with all necessary libraries and packages to work with Qt framework.
 
-
 ---
 After build the Docker Image from this repository, make sure to enable all permissions to Docker:
 ```
@@ -29,4 +28,15 @@ chmod +x <qt-installer-file>
 To run the installer, use the command below:
 ```
 ./<qt-installer-file>
+```
+
+---
+## Extra informations
+This Docker Image does not include Python, to install Python after all steps, run the command bellow:
+```
+apt install -y python3 python3-pip
+```
+To use *Python* instead of *Python3* on command line, run the command bellow:
+```
+apt install python-is-python3
 ```
